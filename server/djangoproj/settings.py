@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
   'localhost'
 ]
-CSRF_TRUSTED_ORIGINS = [ ]
+CSRF_TRUSTED_ORIGINS = []
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -96,7 +96,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', #noqa
     },
     {
         'NAME':
