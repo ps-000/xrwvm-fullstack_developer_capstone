@@ -49,7 +49,7 @@ def registration(request):
         User.objects.get(username=username)
         username_exist = True
     except Exception as err:
-        logger.debug("{} is new user".format(username))
+        logger.debug("{err} is new user".format(username))
 
     # If it is a new user
     if not username_exist:
