@@ -29,12 +29,9 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = [
-  'localhost',
-  'https://shreyasp256-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai'
+  'localhost'
 ]
-CSRF_TRUSTED_ORIGINS = [
-  'https://shreyasp256-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-]
+CSRF_TRUSTED_ORIGINS = [ ]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
